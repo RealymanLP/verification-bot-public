@@ -2,7 +2,9 @@
 
 Verification-Bot
 
-Between the #######s you can change the variables for the Database.
+Between the #######s you can change the Discord-DB variables for the Database.
+Create text channels on your discord server and post the IDs in the variables. Every variable needs a new text channel. DON'T USE THE SAME TEXT CHANNEL FOR MULTIPLE VARIABLES!
+Questions? Ask on Discord!
 
 :copyright: (c) 2022 Verification-Team
 :license: MIT, see LICENSE for more details.
