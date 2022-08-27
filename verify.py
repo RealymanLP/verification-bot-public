@@ -4345,4 +4345,4 @@ async def on_error(event, *args, **kwargs):
 client.loop.create_task(clear())
 client.loop.create_task(clearcache())
 client.loop.create_task(autoneustart())
-client.run('NzU1ODA1MTExNjIzNzQ1NTQ3.G2gG0d.lE-S3QtmjqsC45QVM9-Cgc10fsuAPZ9zyCzjXg', reconnect=True)
+client.run('YOUR TOKEN', reconnect=True)
