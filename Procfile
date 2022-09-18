@@ -1,1 +1,1 @@
-worker: python verify.py
+worker: python verify-public.py
