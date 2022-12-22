@@ -1141,10 +1141,12 @@ async def verify(interaction, vcode=None):
     else:
         if str(interaction.channel.id) in local_verification:
             if str(vcode) == str(code[interaction.guild.id]):
-                try:
-                    role2 = role2
-                except:
-                    role2 = discord.utils.get(interaction.guild.roles, name='Verified')
+                for role in interaction.guild.roles:
+                    if str(role.id) in local_verified_roles:
+                        role2 = discord.utils.get(interaction.guild.roles, id=role.id)
+                        break
+                    else:
+                        role2 = discord.utils.get(interaction.guild.roles, name='Verified')
                 try:
                     await interaction.author.add_roles(role2)
                 except:
